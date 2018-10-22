@@ -1,0 +1,25 @@
+{
+  "name": "scrollable-table",
+  "version": "1.0.0",
+  "description": "Navigation button and fixed coll on mobile devices",
+  "main": "js/scrollableTable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemkinDev/scrollableTablePlugin.git"
+  },
+  "keywords": [
+    "table",
+    "js",
+    "navigation",
+    "fixed-col"
+  ],
+  "author": "Artomkin Aleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemkinDev/scrollableTablePlugin/issues"
+  },
+  "homepage": "https://github.com/ArtemkinDev/scrollableTablePlugin#readme"
+}
