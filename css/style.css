@@ -1,0 +1,139 @@
+/*main style*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1070px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.table-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.table-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.response-table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+}
+
+.response-table th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: 12px 17px;
+    min-width: 170px;
+}
+
+.response-table td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right: 1px solid #37B5A5;
+    padding: 7px 17px;
+}
+
+.response-table tr:last-child td {
+    border-bottom: none;
+}
+
+.response-table td:last-child {
+    border-right: none;
+}
+
+
+/* styles for clone table */
+
+.table-container .table-clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.table-container .table-clone th,
+.table-container .table-clone td {
+    visibility: hidden;
+    border-color: transparent;
+}
+
+.table-container .table-clone th:first-child,
+.table-container .table-clone td:first-child {
+    visibility: visible;
+    pointer-events: visible;
+    z-index: 2;
+    border-bottom: 1px solid #37B5A5;
+    border-right: 1px solid #37B5A5;
+    background: #252F48;
+}
+
+.table-container .table-clone th:first-child {
+    border-bottom: 1px solid #37B5A5;
+}
+
+/* styles for navigation button */
+.table-container .table-navigation {
+    display: none;
+}
+
+.scroll-hide .table-navigation {
+    display: none;
+}
+
+.scroll-init .table-navigation {
+    display: block;
+}
+
+.table-container .table-navigation-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #EDB749;
+    text-align: center;
+    z-index: 3;
+    text-decoration: none;
+}
+
+.table-container .table-navigation-btn-next {
+    right: 0;
+}
+
+.table-container .table-navigation-btn-prev {
+    left: 0;
+}
+
+.table-container.scroll-right .table-navigation-btn-next {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.table-container.scroll-left .table-navigation-btn-prev {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+@media screen and (min-width: 640px) {
+    .response-table {
+        width: 100%;
+    }
+    .response-table th {
+        min-width: inherit;
+    }
+}
